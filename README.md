@@ -1,69 +1,69 @@
-###0x19. C - Stacks, Queues - LIFO, FIFO
-###language - C
-###Group Project by [Chukwuebuka](https://github.com/OsmosisSE) and [Omosalewa](https://github.com/Omosalewa-Akinsete)
+###`0x19. C - Stacks, Queues - LIFO, FIFO`
+###`language - C`
+###`Group Project by [Chukwuebuka](https://github.com/OsmosisSE) and [Omosalewa](https://github.com/Omosalewa-Akinsete)`
 
 Algorithm, Data structure
 
-#Monty Opcodes
+#`Monty Opcodes`
 
-#push
+#`push`
 Usage: push <int>
 Pushes an element to the stack.
 The parameter <int> must be an integer.
 
-#pall
+#`pall`
 Prints all values in the stack/queue, starting from the top.
 
-#pint
+#`pint`
 Prints the top value of the stack/queue.
 
-#pop
+#`pop`
 Removes the top element of the stack/queue.
 
-#swap
+#`swap`
 Swaps the top two elements of the stack/queue.
 
-#nop
+#`nop`
 Does not do anything.
 
-#add
+#`add`
 Adds the top two elements of the stack/queue.
 The result is stored in the second element from the top and the top element is popped.
 
-#sub
+#`sub`
 Subtracts the top element of the stack/queue from the second element from the top.
 The result is stored in the second element from the top and the top element is removed.
 
-#mul
+#`mul`
 Multiplies the top two elements of the stack/queue.
 The result is stored in the second element from the top and the top element is removed.
 
-#div
+#`div`
 Divides the second element from the top of the stack/queue by the top element.
 The result is stored in the second element from the top and the top element is removed.
 
-#mod
+#`mod`
 Computes the modulus of the second element from the top of the stack/queue divided by the top element.
 The result is stored in the second element from the top and the top element is removed.
 
-#pchar
+#`pchar`
 Prints the character value of the top element of the stack/queue.
 The integer at the top is treated as an ASCII value.
 
-#pstr
+#`pstr`
 Prints the string contained in the stack/queue.
 Prints characters element by element until the stack/queue is empty, a value is 0, or an error occurs.
 
-#rotl
+#`rotl`
 Rotates the top element of the stack/queue to the bottom.
 
-#rotr
+#`rotr`
 Rotates the bottom element of the stack/queue to the top.
 
-#stack
+#`stack`
 Switches a queue to stack mode.
 
-#queue
+#`queue`
 Switches a stack to queue mode.
 
 ▶️ Opcodes preceeded by a # are treated as comments and the corresponding line is ignored.
