@@ -1,4 +1,4 @@
-###`0x19. C - Stacks, Queues - LIFO, FIFO`
+### `0x19. C - Stacks, Queues - LIFO, FIFO`
 ###`language - C`
 ###`Group Project by [Chukwuebuka](https://github.com/OsmosisSE) and [Omosalewa](https://github.com/Omosalewa-Akinsete)`
 
