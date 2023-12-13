@@ -1,5 +1,11 @@
 #include <stdlib.h>
 
+char **strtow(char *str, char *delims);
+int is_delim(char ch, char *delims);
+int get_word_length(char *str, char *delims);
+int get_word_count(char *str, char *delims);
+char *get_next_word(char *str, char *delims);
+
 /**
  * strtow - takes a string and separates it into words
  *
@@ -86,7 +92,7 @@ int get_word_length(char *str, char *delims)
 {
 	int wLen = 0, pending = 1, i = 0;
 
-	while (*(strc + i))
+	while (*(str + i))
 	{
 		if (is_delim(str[i], delims))
 			pending = 1;
@@ -111,7 +117,7 @@ int get_word_length(char *str, char *delims)
  */
 int get_word_count(char *str, char *delims)
 {
-	int wc = 0, pending = i, i = 0;
+	int wc = 0, pending = 1, i = 0;
 
 	while (*(str + i))
 	{
