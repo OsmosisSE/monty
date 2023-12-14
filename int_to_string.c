@@ -75,7 +75,7 @@ int get_numbase_len(unsigned int num, unsigned int base)
  * @buff: The buffer to fill with result of conversion.
  * @buff_size: the size of buffer in bytes.
  */
-void ill_numbase_buff(unsigned int num, unsigned int base,
+void fill_numbase_buff(unsigned int num, unsigned int base,
 		char *buff, int buff_size)
 {
 	int rem, i = buff_size - 1;
