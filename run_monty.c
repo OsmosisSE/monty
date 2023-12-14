@@ -82,6 +82,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 		{"pchar", m_pchar},
 		{"pstr", m_pstr},
 		{"rotl", m_rotl},
+		{"rotr", m_rotr},
 		{"stack", m_stack},
 		{"queue", m_queue},
 		{NULL, NULL}
