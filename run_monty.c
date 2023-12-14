@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "monty.h"
+#include <stdio.h>
 #include <string.h>
 
 /**
@@ -138,11 +138,26 @@ int run_monty(FILE *script_fd)
 			free_tokens();
 			break;
 		}
+		prev_tok_len = token_arr_len();
+		op_func(&stack, line_number);
+		if (token_arr_len() != prev_tok_len)
+		{
+			if (op_toks && op_toks[prev_tok_len])
+				exit_status = atoi(op_toks[prev_tok_len]);
+			else
+				exit_status = EXIT_FAILURE;
+			free_tokens();
+			break;
+		}
 		free_tokens();
 	}
 	free_stack(&stack);
-	free(line);
+
 	if (line && *line == 0)
+	{
+		free(line);
 		return (malloc_error());
+	}
+	free(line);
 	return (exit_status);
 }

@@ -3,8 +3,8 @@
 char *get_int(int num);
 unsigned int _abs(int);
 int get_numbase_len(unsigned int num, unsigned int base);
-void fill_numbase_buff(unsigned int num, unsigned int base,char *buff,
-		int buff_size);
+void fill_numbase_buff(unsigned int num, unsigned int base,
+		char *buff, int buff_size);
 
 /**
  * get_int - Converts an integer to its string representation.

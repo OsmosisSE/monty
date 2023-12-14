@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <string.h>
 
 /**
  * free_stack - Frees a stack_t stack.
